@@ -20,8 +20,8 @@ int main()
     }
 
     client.sin_family=AF_INET;
-    client.sin_addr.s_addr=inet_addr("192.168.43.227");
-    client.sin_port=3002;
+    client.sin_addr.s_addr=inet_addr("*your ip address*");
+    client.sin_port=*Enter your port number*;
 
     k=connect(sock_desc,(struct sockaddr*)&client,sizeof(client));
     if(k==-1)
